@@ -1,0 +1,532 @@
+*{
+    margin: 0; padding:0;
+}
+.grid{
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:40px 100vh auto 50vh;
+    grid-template-areas: "header navi" "cover cover" "main main" "footer footer"
+}
+
+p, li{
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/*how to fixed the header and the navi bar*/
+.header{
+    grid-area: header;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+
+.navi{
+    grid-area:navi;
+    background-color:black;
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+nav ul{ 
+    display:flex;
+    list-style:none;
+}
+
+nav li{
+    padding-left:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+
+/* How to add appear motion to text over the boxes*/
+/* How to start/stop video on hover*/
+/* How to change backgroun-image on hover*/
+
+.main{
+    grid-area: main;
+}
+
+
+.container{
+    height:300vh;
+    display:grid;
+    grid-template-columns:repeat(2, 50vw);
+    grid-template-rows:repeat(10, 50vh);
+    color:white;
+}
+
+
+
+.container prj-{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.prj-01{
+    background-image: url(images/calendar-2021/fanwise-1.jpg);
+    background-size:100%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-01:hover{
+    background-size:102%;
+}
+.prj-01::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-01:hover::before{
+    opacity:0.6;
+}
+
+
+.prj-02{
+    background-image: url(images/postcard-MC/02.png);
+    background-size:100%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-02:hover{
+    background-size:102%;
+}
+.prj-02::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-02:hover::before{
+    opacity:0.6;
+}
+
+.prj-03{
+    background-image: url(images/hi-txt/5.png);
+    background-size:120%;
+    background-position: 50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-03:hover{
+    background-size: 122%;
+}
+.prj-03::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-03:hover::before{
+    opacity:0.6;
+}
+
+
+
+.prj-04{
+    background-image: url(images/on&on/on\ &\ on-01.png);
+    background-size:100%;
+    overflow:hidden;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.prj-04:hover{
+    background-size: 102%;
+}
+.prj-04::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-04:hover::before{
+    opacity:0.6;
+}
+/*.on-01{
+    scale:100%;
+    transition: all ease-in-out 0,5s;
+}
+.on-01:hover{
+    scale:102%;
+}*/
+
+.prj-05{
+    background-image: url(images/2-designer-timeline/1.jpg);
+    background-size:100%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-05:hover{
+    background-size: 102%;
+}
+.prj-05::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-05:hover::before{
+    opacity:0.6;
+}
+
+.prj-06{
+    background-image: url(images/breeding-shapes/alphabet\ v1-04.jpg);
+    background-size:110%;
+    background-position-x:50%;
+    background-position-y:24%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-06:hover{
+    background-size: 112%;
+}
+.prj-06::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-06:hover::before{
+    opacity:0.6;
+}
+
+.prj-07{
+    background-color:black;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+
+}
+.prj-07:hover{
+    background-size: 102%;
+}
+.prj-07::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-07:hover::before{
+    opacity:0.6;
+}
+
+.prj-08{
+    background-image: url(images/retina/final\ copy.jpg);
+    background-size:100%;
+    background-position-x:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-08:hover{
+    background-size: 102%;
+}
+.prj-08::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-08:hover::before{
+    opacity:0.6;
+}
+
+
+
+.prj-09{
+    background-color:black;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+.prj-09:hover{
+    background-size: 102%;
+}
+.prj-09::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-09:hover::before{
+    opacity:0.6;
+}
+.lost-in-space{
+    height: 110%;
+}
+
+
+.prj-10{
+    background-image: url(images/wild-typography/IMG_4396.JPG);
+    background-size:100%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-10:hover{
+    background-size: 112%;
+}
+.prj-10::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-10:hover::before{
+    opacity:0.6;
+}
+
+.prj-11{
+    background-image: url(images/LP\ poster/Untitled-6.png);
+    background-size:100%;
+    background-position-x:50%;
+    background-position-y:15%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-11:hover{
+    background-size: 112%;
+}
+.prj-11::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-11:hover::before{
+    opacity:0.6;
+}
+
+.prj-12{
+    background-image: url(images/the-box-of-love/22.jpg);
+    background-size:100%;
+    background-position-x:50%;
+    background-position-x:60%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-12:hover{
+    background-size: 102%;
+}
+.prj-12::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-12:hover::before{
+    opacity:0.6;
+}
+
+.prj-13{
+    background-image: url(images/humanity+/4.png);
+    background-size:100%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-13:hover{
+    background-size: 102%;
+}
+.prj-13::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-13:hover::before{
+    opacity:0.6;
+}
+
+.prj-14{
+    background-image: url(images/landscape-collage/landscape\ collage.png);
+    background-size:110%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-14:hover{
+    background-size: 122%;
+}
+.prj-14::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-14:hover::before{
+    opacity:0.6;
+}
+
+
+.prj-17{
+    overflow:hidden;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.prj-17:hover{
+    background-size: 102%;
+}
+.prj-17::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-17:hover::before{
+    opacity:0.6;
+}
+.tamagotchi{
+    width:100%;
+}
+
+
+.prj-18{
+    background-image: url(images/WR.G/6.png);
+    background-size:100%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-18:hover{
+    background-size: 112%;
+}
+.prj-18::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-18:hover::before{
+    opacity:0.6;
+}
+
+.prj-19{
+    background-image: url(images/koka/v2-1.png);
+    background-size:100%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-19:hover{
+    background-size: 112%;
+}
+.prj-19::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-19:hover::before{
+    opacity:0.6;
+}
+
+.prj-20{
+    background-image: url(images/tactile-pavings/center.png);
+    background-size:100%;
+    background-position-x:50%;
+    background-position-y:55%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-20:hover{
+    background-size: 112%;
+}
+.prj-20::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-20:hover::before{
+    opacity:0.6;
+}
+
+
+
+.footer{
+    grid-area: footer;
+}
+
