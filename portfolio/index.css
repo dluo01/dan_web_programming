@@ -72,7 +72,7 @@ nav a{
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1152px){
     .container{
         height:900vh;
         display:grid;
@@ -493,6 +493,7 @@ nav a{
 .prj-19{
     background-image: url(images/koka/v2-1.png);
     background-size:100%;
+    background-size:cover;
     background-position:50%;
     position:relative;
     transition: all ease-in-out 0.3s;
