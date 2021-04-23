@@ -4,8 +4,8 @@
 .grid{
     display:grid;
     grid-template-columns:50% 50%;
-    grid-template-rows:40px 100vh auto 50vh;
-    grid-template-areas: "header header" "cover cover" "main main" "footer footer"
+    grid-template-rows:40px auto 50vh;
+    grid-template-areas: "header header" "main main" "footer footer"
 }
 
 
@@ -21,6 +21,7 @@
     grid-area: header;
     width:100%;
     height:40px;
+    background-color: white;
     display:flex;
     align-items: center;
     justify-content:space-between;
@@ -28,8 +29,6 @@
     left:0;
     top:0;
     z-index:10;
-    background-color: #000;
-    color:white;
 }
 
 
@@ -44,1009 +43,499 @@ nav li{
 }
 
 nav a{
-    color:white;
+    color:black;
     text-decoration: none;
 }
 
-.cover{
-    grid-area:cover;
-    font-family: "roboto", sans-serif;
-    font-weight:399;
-    font-size: 40px;
-    background-color:#FFEEAA;
-}
-
-.intro{
-    position:absolute;
-    bottom:20px;
-    right:20px;
-    width:78%;
-    line-height:4rem;
-}
-
-.graphic-design{
-    width:40%;
-    height:60%;
-    position:absolute;
-    left:50px;
-    top:50px;
-    opacity:0;
-}
-
-.graphic-design-2{
-    width:100%;
-    height:100%;
-    position:relative;
-}
-
-.slideshow-01{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/calendar-2021/fanwise-1.jpg);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-01 3s 0s;
-    opacity:0;
-    z-index:0;
-}
-
-
-@keyframes slide-01{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-02{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/calendar-2021/peeloff-1.jpg);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-02 3s 3s;
-    opacity:0;
-    z-index:1;
-}
-
-
-@keyframes slide-02{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-03{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/postcard-MC/02.png);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-03 3s 6s;
-    opacity:0;
-    z-index:2;
-}
-
-
-@keyframes slide-03{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-04{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/2-designer-timeline/1.jpg);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-04 3s 9s;
-    opacity:0;
-    z-index:3;
-}
-
-
-@keyframes slide-04{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-05{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/breeding-shapes/alphabet\ v1-04.jpg);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-05 3s 12s;
-    opacity:0;
-    z-index:4;
-}
-
-
-@keyframes slide-05{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-06{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/retina/final\ copy.jpg);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-06 3s 15s;
-    opacity:0;
-    z-index:5;
-}
-
-
-@keyframes slide-06{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-07{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/koka/v2-02.png);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-07 3s 18s;
-    opacity:0;
-    z-index:6;
-}
-
-
-@keyframes slide-07{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-08{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/koka/v2-1.png);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-08 3s 21s;
-    opacity:0;
-    z-index:7;
-}
-
-
-@keyframes slide-08{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-09{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/tactile-pavings/center.png);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-09 3s 24s;
-    opacity:0;
-    z-index:8;
-}
-
-
-@keyframes slide-09{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-10{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/on&on/on\ &\ on-05.png);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-10 3s 27s;
-    opacity:0;
-    z-index:9;
-}
-
-
-@keyframes slide-10{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-11{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/wild-typography/IMG_4396.JPG);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-11 3s 30s;
-    opacity:0;
-    z-index:10;
-}
-
-
-@keyframes slide-11{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-12{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/lost-in-space/final\ 1.jpg);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-12 3s 33s;
-    opacity:0;
-    z-index:11;
-}
-
-
-@keyframes slide-12{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-13{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/lost-in-space/final\ 3.jpg);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-03 3s 36s;
-    opacity:0;
-    z-index:12;
-}
-
-
-@keyframes slide-13{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-14{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/the-box-of-love/22.jpg);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-14 3s 39s;
-    opacity:0;
-    z-index:13;
-}
-
-
-
-@keyframes slide-14{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-15{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/LP\ poster/poster.jpeg);
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-15 3s 42s;
-    opacity:0;
-    z-index:14;
-}
-
-@keyframes slide-15{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.slideshow-16{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/humanity+/5.png);
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-16 3s 45s;
-    opacity:0;
-    z-index:15;
-}
-
-@keyframes slide-16{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-
-.animation{
-    width:30%;
-    height:45%;
-    position:absolute;
-    left:50%;
-    top:40%;
-    opacity:0;
-}
-
-.animation-2{
-    width: 100%;
-    height:100%;
-    position:relative;
-}
-
-.animation-01{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/pasta/pasta\ dance.gif);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-1 6s 0s;
-    opacity:0;
-    z-index:0;
-}
-
-@keyframes slide-1{
-    0%{
-        opacity:0;
-    }
-
-    20%{
-        opacity:1;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.animation-02{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/hi-txt/3.png);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-2 6s 6s;
-    opacity:0;
-    z-index:1;
-}
-
-@keyframes slide-2{
-    0%{
-        opacity:0;
-    }
-
-    20%{
-        opacity:1;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.animation-03{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/WR.G/wrg.gif);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-3 6s 12s;
-    opacity:0;
-    z-index:2;
-}
-
-@keyframes slide-3{
-    0%{
-        opacity:0;
-    }
-
-    20%{
-        opacity:1;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.post-digital{
-    width:35%;
-    height:50%;
-    position:absolute;
-    right:5%;
-    top:10%;
-    opacity:0;
-}
-
-.post-digital-2{
-    width: 100%;
-    height:100%;
-    position:relative;
-}
-
-
-.post-01{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/landscape-collage/landscape\ collage.jpg);
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-1 3s 0s;
-    opacity:0;
-    z-index:0;
-}
-
-@keyframes slide-1{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.post-02{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/tamagotchi/Screen\ Shot\ 2021-03-26\ at\ 2.47.14\ PM.png);
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-2 3s 3s;
-    opacity:0;
-    z-index:1;
-}
-
-@keyframes slide-2{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.post-03{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/hi-txt/5.jpg);
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-2 3s 6s;
-    opacity:0;
-    z-index:2;
-}
-
-@keyframes slide-3{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.post-04{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/intimacy/Screen\ Shot\ 2021-04-16\ at\ 1.30.16\ AM.png);
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-4 3s 9s;
-    opacity:0;
-    z-index:3;
-}
-
-@keyframes slide-4{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.installation{
-    width:30%;
-    height:30%;
-    position:absolute;
-    left:20%;
-    top:50%;
-    opacity:0;
-}
-
-.installtion-2{
-    width: 100%;
-    height:100%;
-    position:relative;
-}
-
-.installation-01{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/memory-of-glass/Screen\ Shot\ 2021-03-03\ at\ 4.09.01\ PM.jpg);
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-1 3s 0s;
-    opacity:0;
-    z-index:0;
-}
-
-@keyframes slide-1{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.installation-02{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/memory-of-glass/Birthplace.jpg);
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-2 3s 3s;
-    opacity:0;
-    z-index:1;
-}
-
-@keyframes slide-2{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.installation-03{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/memory-of-glass/Screen\ Shot\ 2021-04-23\ at\ 1.07.33\ AM.png);
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-3 3s 6s;
-    opacity:0;
-    z-index:2;
-}
-
-@keyframes slide-3{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-.installation-04{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0; left:0;
-    background-image:url(images/memory-of-glass/Screen\ Shot\ 2021-04-23\ at\ 1.07.54\ AM.png);
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    animation: slide-4 3s 9s;
-    opacity:0;
-    z-index:3;
-}
-
-@keyframes slide-4{
-    0%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-    }
-}
-
-
-
-
-
 .main{
     grid-area: main;
+    /*padding-top:20vw;
+    padding-left:7vw;*/
 }
+
 
 
 .container{
     height:500vh;
     display:grid;
     grid-template-columns:repeat(2, 50vw);
-    grid-template-rows:repeat(18, 100vh);
-}
-
-.container box-{
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.text{
-    position:absolute;
-    bottom:50px;
-    padding-left:50px;
-    max-width:90%;
-}
-
-.title{
-    font-family: "roboto", sans-serif;
-    font-weight: 400;
-    font-size: 80px;
-    letter-spacing: 2px;
-    padding:10px;
-}
-
-.subtitle{
-    font-family: "roboto", sans-serif;
-    font-weight: 400;
-    font-size: 50px;
-    letter-spacing: 2px;
-    padding:10px;
+    grid-template-rows:repeat(18, 50vh);
+    /*grid-template-columns:repeat(4, 20vw);
+    grid-template-rows:repeat(10, 20vh);
+    grid-gap:2vw;*/
 }
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1152px){
     .container{
-        height:500vh;
-        display:grid;
-        grid-template-columns:repeat(2, 50vw);
-        grid-template-rows:repeat(18, 50vh);
-    }
-
-    .text{
-        position:absolute;
-        bottom:20px;
-        padding-left:20px;
-        max-width:90%;
-    }
-    
-    .title{
-        font-family: "roboto", sans-serif;
-        font-weight: 400;
-        font-size: 50px;
-        letter-spacing: 2px;
-        padding:10px;
-    }
-    
-    .subtitle{
-        font-family: "roboto", sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        letter-spacing: 2px;
-        padding:10px;
-    }
-}
-
-@media screen and (max-width:500px){
-    .container{
-        height:500vh;
+        height:900vh;
         display:grid;
         grid-template-columns:repeat(1, 100vw);
         grid-template-rows:repeat(18, 50vh);
     }
-
-    .text{
-        position:absolute;
-        bottom:20px;
-        padding-left:20px;
-        max-width:90%;
-    }
-    
-    .title{
-        font-family: "roboto", sans-serif;
-        font-weight: 400;
-        font-size: 30px;
-        letter-spacing: 2px;
-        padding:10px;
-    }
-    
-    .subtitle{
-        font-family: "roboto", sans-serif;
-        font-weight: 400;
-        font-size: 15px;
-        letter-spacing: 2px;
-        padding:10px;
-    }
 }
 
 
-.box-01{
-    background-image: url(images/tactile-pavings/center.png);
-    background-size:cover;
-    background-position-x:50%;
-    background-position-y:55%;
-    position:relative;
-    z-index:1;
-}
-.box-01:hover{
-    background-image: url(images/tactile-pavings/1.png)
-}
-
-.box-02{
-    background-color:#FFDD15;
-    position:relative;
+.container prj-{
+    grid-row: span 1;
+    grid-column: span 1;
 }
 
 
-.box-03{
-    background-color:#D8580D;
-    background-size:100%;
-    position:relative;
-    color:#EADD92;
-}
 
 
-.box-04{
-    background-image: url(images/postcard-MC/02.png);
-    background-size:cover;
-    background-position:50%;
-    position:relative;
-}
-.box-04:hover{
-    background-image:url(images/postcard-MC/03.jpg)
-}
-
-.box-05{
+.prj-01{
     background-image: url(images/calendar-2021/fanwise-1.jpg);
+    background-repeat: no-repeat;
     background-size:cover;
     background-position:50%;
     position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-01:hover{
+    background-size:102%;
+}
+.prj-01::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-01:hover::before{
+    opacity:0.6;
 }
 
-.box-06{
-    background-color:#D8A3BA;
+
+.prj-02{
+    background-image: url(images/postcard-MC/02.png);
     background-size:100%;
+    background-position:50%;
     position:relative;
-    color:black;
+    transition: all ease-in-out 0.3s;
+}
+.prj-02:hover{
+    background-size:102%;
+}
+.prj-02::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-02:hover::before{
+    opacity:0.6;
 }
 
-.box-07{
-    background-color:#000;
+.prj-03{
+    background-image: url(images/hi-txt/5.jpg);
+    background-size:120%;
+    background-position: 50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-03:hover{
+    background-size: 122%;
+}
+.prj-03::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-03:hover::before{
+    opacity:0.6;
+}
+
+
+
+.prj-04{
+    background-image: url(images/on&on/on\ &\ on-01.png);
     background-size:100%;
-    position:relative;
-    color:white;
-}
-
-.box-08{
     overflow:hidden;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-}
-.on-01{
-    width:100%;
-}
-
-.box-09{
-    background-image: url(images/koka/v2-1.png);
-    background-size:cover;
-    background-position:50%;
     position:relative;
-}
-
-.box-10{
-    background-color:#4F4F9C;
-    background-size:100%;
-    position:relative;
-    color:white;
-}
-
-.box-11{
-    background-color:#D2D458;
-    background-size:100%;
-    position:relative;
-    color:black;
-}
-
-.box-12{
-    background-image: url(images/breeding-shapes/alphabet\ v1-04.jpg);
-    background-size:cover;
-    background-position:50%;
-    position:relative;
-}
-
-.box-13{
-    background-color:black;
-    position:relative;
-    overflow:hidden;
+    transition: all ease-in-out 0.3s;
     display:flex;
     justify-content: center;
     align-items: center;
 }
+.prj-04:hover{
+    background-size: 102%;
+}
+.prj-04::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-04:hover::before{
+    opacity:0.6;
+}
+/*.on-01{
+    scale:100%;
+    transition: all ease-in-out 0,5s;
+}
+.on-01:hover{
+    scale:102%;
+}*/
 
-.pasta{
+.prj-05{
+    background-image: url(images/2-designer-timeline/1.jpg);
+    background-size:100%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-05:hover{
+    background-size: 102%;
+}
+.prj-05::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-05:hover::before{
+    opacity:0.6;
+}
+
+.prj-06{
+    background-image: url(images/breeding-shapes/alphabet\ v1-04.jpg);
+    background-size:110%;
+    background-position-x:50%;
+    background-position-y:24%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-06:hover{
+    background-size: 112%;
+}
+.prj-06::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-06:hover::before{
+    opacity:0.6;
+}
+
+.prj-07{
+    background-color:black;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+
+}
+.prj-07:hover{
+    background-size: 102%;
+}
+.prj-07::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-07:hover::before{
+    opacity:0.6;
+}
+
+.prj-08{
+    background-image: url(images/retina/final\ copy.jpg);
+    background-size:100%;
+    background-position-x:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-08:hover{
+    background-size: 102%;
+}
+.prj-08::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-08:hover::before{
+    opacity:0.6;
+}
+
+
+
+.prj-09{
+    background-color:black;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+.prj-09:hover{
+    background-size: 102%;
+}
+.prj-09::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-09:hover::before{
+    opacity:0.6;
+}
+.lost-in-space{
+    height: 110%;
+}
+
+
+.prj-10{
+    background-image: url(images/wild-typography/IMG_4396.JPG);
+    background-size:100%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-10:hover{
+    background-size: 112%;
+}
+.prj-10::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-10:hover::before{
+    opacity:0.6;
+}
+
+.prj-11{
+    background-image: url(images/LP\ poster/Untitled-6.png);
+    background-size:100%;
+    background-position-x:50%;
+    background-position-y:15%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-11:hover{
+    background-size: 112%;
+}
+.prj-11::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-11:hover::before{
+    opacity:0.6;
+}
+
+.prj-12{
+    background-image: url(images/the-box-of-love/22.jpg);
+    background-size:100%;
+    background-position-x:50%;
+    background-position-x:60%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-12:hover{
+    background-size: 102%;
+}
+.prj-12::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-12:hover::before{
+    opacity:0.6;
+}
+
+.prj-13{
+    background-image: url(images/humanity+/4.png);
+    background-size:100%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-13:hover{
+    background-size: 102%;
+}
+.prj-13::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-13:hover::before{
+    opacity:0.6;
+}
+
+.prj-14{
+    background-image: url(images/landscape-collage/landscape\ collage.png);
+    background-size:110%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-14:hover{
+    background-size: 122%;
+}
+.prj-14::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-14:hover::before{
+    opacity:0.6;
+}
+
+
+.prj-17{
+    overflow:hidden;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.prj-17:hover{
+    background-size: 102%;
+}
+.prj-17::before{
+    content:'';
+    display:block;
+    background-color:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-17:hover::before{
+    opacity:0.6;
+}
+.tamagotchi{
     width:100%;
 }
 
-.box-14{
-    background-color:#F1D68C;
-    background-size:100%;
-    position:relative;
-    color:black;
-}
 
-.box-15{
-    background-color:#DCE2E8;
+.prj-18{
+    background-image: url(images/WR.G/6.png);
     background-size:100%;
-    position:relative;
-    color:black;
-}
-
-.box-16{
-    background-image: url(images/2-designer-timeline/1.jpg);
-    background-size:cover;
     background-position:50%;
     position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-18:hover{
+    background-size: 112%;
+}
+.prj-18::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-18:hover::before{
+    opacity:0.6;
 }
 
+.prj-19{
+    background-image: url(images/koka/v2-1.png);
+    background-size:100%;
+    background-position:50%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+}
+.prj-19:hover{
+    background-size: 102%;
+}
+.prj-19::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+}
+.prj-19:hover::before{
+    opacity:0.6;
+}
 
-
+.prj-20{
+    background-image: url(images/tactile-pavings/center.png);
+    background-size:100%;
+    background-position-x:50%;
+    background-position-y:55%;
+    position:relative;
+    transition: all ease-in-out 0.3s;
+    z-index:1;
+}
+.prj-20:hover{
+    background-size: 102%;
+}
+.prj-20::before{
+    content:'';
+    display:block;
+    background:black;
+    position:absolute;
+    top:0; right:0; bottom:0; left:0;
+    opacity:0;
+    transition: all ease-in-out 0.5s;
+    
+}
+.prj-20:hover::before{
+    opacity:0.6;
+}
 
 .footer{
     grid-area: footer;
-    height:50vh;
-    background-color:white;
-    padding:30px 10px;
 }
 
