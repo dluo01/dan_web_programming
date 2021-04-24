@@ -4,17 +4,17 @@
 .grid{
     display:grid;
     grid-template-columns:50% 50%;
-    grid-template-rows:40px 100vh auto 50vh;
+    grid-template-rows:40px 100vh auto 10vh;
     grid-template-areas: "header header" "cover cover" "main main" "footer footer"
 }
 
 
-.header p, li, .footer p{
+.header{
     font-family: "roboto", sans-serif;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 2px;
-    padding:0px 10px;
+    padding:0px 20px;
 }
 
 .header{
@@ -27,7 +27,7 @@
     position:fixed;
     left:0;
     top:0;
-    z-index:10;
+    z-index:100;
     background-color: #000;
     color:white;
 }
@@ -37,10 +37,11 @@ nav ul{
     display:flex;
     justify-content: flex-end;
     list-style:none;
+    padding-right:20px;
 }
 
 nav li{
-    padding-left:20px;
+    padding:20px;
 }
 
 nav a{
@@ -48,12 +49,24 @@ nav a{
     text-decoration: none;
 }
 
+@media only screen and (max-width:1000px){
+.header,.footer{
+    font-size:18px;
+}
+}
+
+@media only screen and (max-width:800px){
+    .header{
+        font-size:15px;
+    }
+
+}
 .cover{
     grid-area:cover;
     font-family: "roboto", sans-serif;
     font-weight:399;
     font-size: 40px;
-    background-color:#FFEEAA;
+    background-color:white;
 }
 
 .intro{
@@ -64,13 +77,26 @@ nav a{
     line-height:4rem;
 }
 
+@media only screen and (max-width:1300px){
+    .cover{
+        font-size:30px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .cover{
+        font-size:25px;
+    }
+}
+
 .graphic-design{
     width:40%;
     height:60%;
     position:absolute;
     left:50px;
     top:50px;
-    opacity:0;
+    opacity:1;
+
 }
 
 .graphic-design-2{
@@ -92,6 +118,7 @@ nav a{
     opacity:0;
     z-index:0;
 }
+
 
 
 @keyframes slide-01{
@@ -213,7 +240,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-06 3s 15s;
+    animation: slide-06 3s 57s;
     opacity:0;
     z-index:5;
 }
@@ -238,7 +265,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-07 3s 18s;
+    animation: slide-07 3s 60s;
     opacity:0;
     z-index:6;
 }
@@ -263,7 +290,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-08 3s 21s;
+    animation: slide-08 3s 63s;
     opacity:0;
     z-index:7;
 }
@@ -288,7 +315,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-09 3s 24s;
+    animation: slide-09 3s 66s;
     opacity:0;
     z-index:8;
 }
@@ -313,7 +340,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-10 3s 27s;
+    animation: slide-10 3s 69s;
     opacity:0;
     z-index:9;
 }
@@ -338,7 +365,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-11 3s 30s;
+    animation: slide-11 3s 72s;
     opacity:0;
     z-index:10;
 }
@@ -363,7 +390,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-12 3s 33s;
+    animation: slide-12 3s 75s;
     opacity:0;
     z-index:11;
 }
@@ -388,7 +415,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-03 3s 36s;
+    animation: slide-03 3s 78s;
     opacity:0;
     z-index:12;
 }
@@ -413,7 +440,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-14 3s 39s;
+    animation: slide-14 3s 91s;
     opacity:0;
     z-index:13;
 }
@@ -439,7 +466,7 @@ nav a{
     background-size:100%;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-15 3s 42s;
+    animation: slide-15 3s 94s;
     opacity:0;
     z-index:14;
 }
@@ -463,7 +490,7 @@ nav a{
     background-size:100%;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-16 3s 45s;
+    animation: slide-16 3s 97s;
     opacity:0;
     z-index:15;
 }
@@ -485,7 +512,7 @@ nav a{
     position:absolute;
     left:50%;
     top:40%;
-    opacity:0;
+    opacity:1;
 }
 
 .animation-2{
@@ -503,7 +530,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-1 6s 0s;
+    animation: slide-1 6s 15s;
     opacity:0;
     z-index:0;
 }
@@ -531,7 +558,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-2 6s 6s;
+    animation: slide-2 6s 21s;
     opacity:0;
     z-index:1;
 }
@@ -559,7 +586,7 @@ nav a{
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-3 6s 12s;
+    animation: slide-3 6s 27s;
     opacity:0;
     z-index:2;
 }
@@ -584,7 +611,7 @@ nav a{
     position:absolute;
     right:5%;
     top:10%;
-    opacity:0;
+    opacity:1;
 }
 
 .post-digital-2{
@@ -603,7 +630,7 @@ nav a{
     background-size:100%;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-1 3s 0s;
+    animation: slide-1 3s 33s;
     opacity:0;
     z-index:0;
 }
@@ -627,7 +654,7 @@ nav a{
     background-size:100%;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-2 3s 3s;
+    animation: slide-2 3s 36s;
     opacity:0;
     z-index:1;
 }
@@ -651,7 +678,7 @@ nav a{
     background-size:100%;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-2 3s 6s;
+    animation: slide-2 3s 39s;
     opacity:0;
     z-index:2;
 }
@@ -675,7 +702,7 @@ nav a{
     background-size:100%;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-4 3s 9s;
+    animation: slide-4 3s 42s;
     opacity:0;
     z-index:3;
 }
@@ -696,7 +723,7 @@ nav a{
     position:absolute;
     left:20%;
     top:50%;
-    opacity:0;
+    opacity:1;
 }
 
 .installtion-2{
@@ -714,7 +741,7 @@ nav a{
     background-size:100%;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-1 3s 0s;
+    animation: slide-1 3s 45s;
     opacity:0;
     z-index:0;
 }
@@ -738,7 +765,7 @@ nav a{
     background-size:100%;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-2 3s 3s;
+    animation: slide-2 3s 48s;
     opacity:0;
     z-index:1;
 }
@@ -762,7 +789,7 @@ nav a{
     background-size:100%;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-3 3s 6s;
+    animation: slide-3 3s 51s;
     opacity:0;
     z-index:2;
 }
@@ -786,7 +813,7 @@ nav a{
     background-size:100%;
     background-repeat:no-repeat;
     background-position:center;
-    animation: slide-4 3s 9s;
+    animation: slide-4 3s 54s;
     opacity:0;
     z-index:3;
 }
@@ -811,10 +838,10 @@ nav a{
 
 
 .container{
-    height:500vh;
+    height:800vh;
     display:grid;
     grid-template-columns:repeat(2, 50vw);
-    grid-template-rows:repeat(18, 100vh);
+    grid-template-rows:repeat(8, 100vh);
 }
 
 .container box-{
@@ -846,12 +873,12 @@ nav a{
 }
 
 
-@media screen and (max-width:1000px){
+@media only screen and (max-width:1300px){
     .container{
-        height:500vh;
+        height:400vh;
         display:grid;
         grid-template-columns:repeat(2, 50vw);
-        grid-template-rows:repeat(18, 50vh);
+        grid-template-rows:repeat(8, 50vh);
     }
 
     .text{
@@ -878,17 +905,17 @@ nav a{
     }
 }
 
-@media screen and (max-width:500px){
+@media only screen and (max-width:800px){
     .container{
-        height:500vh;
+        height:800vh;
         display:grid;
         grid-template-columns:repeat(1, 100vw);
-        grid-template-rows:repeat(18, 50vh);
+        grid-template-rows:repeat(16, 50vh);
     }
 
     .text{
         position:absolute;
-        bottom:20px;
+        top:20px;
         padding-left:20px;
         max-width:90%;
     }
@@ -904,7 +931,7 @@ nav a{
     .subtitle{
         font-family: "roboto", sans-serif;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 20px;
         letter-spacing: 2px;
         padding:10px;
     }
@@ -920,20 +947,20 @@ nav a{
     z-index:1;
 }
 .box-01:hover{
-    background-image: url(images/tactile-pavings/1.png)
+    background-image: url(images/tactile-pavings/IMG_2764.png)
 }
 
 .box-02{
-    background-color:#FFDD15;
+    /*background-color:#FFDD15;*/
     position:relative;
 }
 
 
 .box-03{
-    background-color:#D8580D;
+    /*background-color:#D8580D;*/
     background-size:100%;
     position:relative;
-    color:#EADD92;
+    color:black;
 }
 
 
@@ -953,29 +980,30 @@ nav a{
     background-position:50%;
     position:relative;
 }
+.box-05:hover{
+    background-image:url(images/calendar-2021/peeloff-1.jpg)
+}
+
 
 .box-06{
-    background-color:#D8A3BA;
+    /*background-color:#D8A3BA;*/
     background-size:100%;
     position:relative;
     color:black;
 }
 
 .box-07{
-    background-color:#000;
+    /*background-color:#000;*/
     background-size:100%;
     position:relative;
-    color:white;
+    color:black;
 }
 
 .box-08{
-    overflow:hidden;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-}
-.on-01{
-    width:100%;
+    background-image: url(images/on&on/on\ &\ on\ animation_6.gif);
+    background-size:cover;
+    background-position:50%;
+    position:relative;
 }
 
 .box-09{
@@ -983,20 +1011,26 @@ nav a{
     background-size:cover;
     background-position:50%;
     position:relative;
+    order:9;
+}
+.box-09:hover{
+    background-image:url(images/koka/v2-2.png);
 }
 
 .box-10{
-    background-color:#4F4F9C;
-    background-size:100%;
-    position:relative;
-    color:white;
-}
-
-.box-11{
-    background-color:#D2D458;
+    /*background-color:#4F4F9C;*/
     background-size:100%;
     position:relative;
     color:black;
+    order:10;
+}
+
+.box-11{
+    /*background-color:#D2D458;*/
+    background-size:100%;
+    position:relative;
+    color:black;
+    order:11;
 }
 
 .box-12{
@@ -1004,6 +1038,10 @@ nav a{
     background-size:cover;
     background-position:50%;
     position:relative;
+    order:12;
+}
+.box-12:hover{
+    background-image:url(images/breeding-shapes/alphabet\ v2-01.jpg);
 }
 
 .box-13{
@@ -1013,6 +1051,7 @@ nav a{
     display:flex;
     justify-content: center;
     align-items: center;
+    order:13;
 }
 
 .pasta{
@@ -1020,17 +1059,19 @@ nav a{
 }
 
 .box-14{
-    background-color:#F1D68C;
+    /*background-color:#F1D68C;*/
     background-size:100%;
     position:relative;
     color:black;
+    order:14;
 }
 
 .box-15{
-    background-color:#DCE2E8;
+    /*background-color:#DCE2E8;*/
     background-size:100%;
     position:relative;
     color:black;
+    order:15;
 }
 
 .box-16{
@@ -1038,15 +1079,77 @@ nav a{
     background-size:cover;
     background-position:50%;
     position:relative;
+    order:16;
+}
+.box-16:hover{
+    background-image:url(images/2-designer-timeline/IMG_3542.jpg);
 }
 
 
 
+
+@media only screen and (max-width:800px){
+    .box-01{
+        order:1;
+    }
+    .box-02{
+        order:2;
+    }
+    .box-03{
+        order:4;
+    }
+    .box-04{
+        order:3;
+    }
+    .box-05{
+        order:5;
+    }
+    .box-06{
+        order:6;
+    }
+    .box-07{
+        order:8;
+    }
+    .box-08{
+        order:7;
+    }
+    .box-09{
+        order:9;
+    }
+    .box-10{
+        order:10;
+    }
+    .box-11{
+        order:12;
+    }
+    .box-12{
+        order:11;
+    }
+    .box-13{
+        order:13;
+    }
+    .box-14{
+        order:14;
+    }
+    .box-15{
+        order:16;
+    }
+    .box-16{
+        order:15;
+    }
+}
 
 .footer{
     grid-area: footer;
-    height:50vh;
-    background-color:white;
-    padding:30px 10px;
+    height:10vh;
+    background-color:black;
+    color:white;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+    display:flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding-left:20px;
 }
-
