@@ -1,0 +1,15 @@
+*{
+    margin: 0; padding:0;
+}
+
+.wheel{
+    width:100vw;
+    height:100vw;
+    position:absolute;
+    top:0; left:0;
+    background-image: url(images/disconnection.gif);
+    background-size: 150vw 150vw;
+    background-repeat: repeat;
+    background-position: center;
+}
+

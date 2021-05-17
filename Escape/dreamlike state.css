@@ -1,0 +1,74 @@
+*{
+    margin: 0; padding:0;
+}
+body{
+    background-color: #fbfbfb;
+}
+
+.wheel{
+    width:100vw;
+    height:100vw;
+    position:absolute;
+    top:0; left:0;
+    background-image: url(images/dreamlike.gif);
+    background-size: 50vw 50vw;
+    background-repeat: repeat;
+}
+
+.text{
+    width:100vw;
+    height:10vw;
+    position:absolute;
+    top:100vw;
+}
+
+.cp{
+    height:4.5vw;
+    position:absolute;
+    left:30px;
+    top:3vw;
+    
+}
+.button{
+    position:absolute;
+    right:10px;
+    top:5vw;
+    width:8vw;
+    height:3vw;
+    border-radius: 8px;
+    background-color:#fbfbfb;
+    border:none;
+    color:#ffd8ff;
+    text-align:center;
+    font-size:x-large;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: #c44d78;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
