@@ -1,0 +1,22 @@
+.title {
+	text-align: center;
+	color:white;
+}
+.caption {
+	color:white;
+	font-size: large;
+}
+
+div{
+	color:white;
+	text-align: center;
+}
+
+body{
+	background-image:url("files/ps/16 copy.png");
+	width:100%;
+	position:relative;
+	background-position:center;
+	background-repeat:repeat;
+	background-size:contain;
+	padding-top: 80px;
